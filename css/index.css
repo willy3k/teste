@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    /* display: flex; */
+    justify-content: center;
+    width: 700px;
+    height: 64rem;
+    /* min-height: 1500px; */
+    border-radius: 20px;
+    background: white;
+    box-shadow: 1px 1px 10px rgb(120, 130, 161);
+    margin: auto;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+    width: 93%;
+    height: 30px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/**===conteudo===*/
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+#scroll-conteudo{
+    overflow-y: scroll;
+    height: 700px;
+}
+
+.conteudo-inter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.inter-imagi {
+    margin: 20px;
+    width: 140px;
+    height: 140px;
+    border: 1px solid red;
+}
+
+.preço-nome {
+    padding-top: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.preço-antes {
+    color: rgba(94, 91, 91, 0.61);
+}
+.preço-atual {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 23px;
+}
+
+.inter1, .inter2, .inter3, .inter4{
+    display: flex;
+    width: 100%;
+    float: left;
+}
+
+div.total {
+    border-top: 2px solid rgba(0, 0, 0, 0.13);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 25px;
+    width: 80%;
+    font-weight: 900;
+    border: none;
+    border-radius: 11px;
+    color: white;
+    font-size: 20px;
+    background-color:rgb(26, 36, 179) ;
+}
+
+
+/*para celular e tablet**/
+
+@media (max-width:700px) {
+    .container {
+        width: 100%;
+        height: 63rem;
+        border-radius: -20px;
+    }
+
+    bottom{
+        margin: 20px;
+    }
+    .titulo {
+        width: 89.6%;
+    }
+
+}
+
+
